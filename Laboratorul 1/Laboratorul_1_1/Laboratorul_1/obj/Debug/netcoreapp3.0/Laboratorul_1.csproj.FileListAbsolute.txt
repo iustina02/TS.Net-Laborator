@@ -1,0 +1,11 @@
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.exe
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.deps.json
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.runtimeconfig.json
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.runtimeconfig.dev.json
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.dll
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\bin\Debug\netcoreapp3.0\Laboratorul_1.pdb
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\obj\Debug\netcoreapp3.0\Laboratorul_1.csprojAssemblyReference.cache
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\obj\Debug\netcoreapp3.0\Laboratorul_1.AssemblyInfoInputs.cache
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\obj\Debug\netcoreapp3.0\Laboratorul_1.AssemblyInfo.cs
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\obj\Debug\netcoreapp3.0\Laboratorul_1.dll
+C:\Users\iusti\OneDrive\Desktop\TSP.NET\Laboratorul_1\Laboratorul_1\obj\Debug\netcoreapp3.0\Laboratorul_1.pdb

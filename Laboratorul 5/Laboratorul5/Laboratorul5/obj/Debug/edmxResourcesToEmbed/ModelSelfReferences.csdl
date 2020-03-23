@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SelfReference_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SelfReference_DBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SelfReferences" EntityType="SelfReference_DBModel.SelfReference" />
+    <AssociationSet Name="FK_ParentSelfReferenceId" Association="SelfReference_DBModel.FK_ParentSelfReferenceId">
+      <End Role="SelfReference" EntitySet="SelfReferences" />
+      <End Role="SelfReference1" EntitySet="SelfReferences" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="SelfReference">
+    <Key>
+      <PropertyRef Name="SelfReferenceId" />
+    </Key>
+    <Property Name="SelfReferenceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="ParentSelfReferenceId" Type="Int32" />
+    <NavigationProperty Name="SelfReference1" Relationship="SelfReference_DBModel.FK_ParentSelfReferenceId" FromRole="SelfReference" ToRole="SelfReference1" />
+    <NavigationProperty Name="SelfReference2" Relationship="SelfReference_DBModel.FK_ParentSelfReferenceId" FromRole="SelfReference1" ToRole="SelfReference" />
+  </EntityType>
+  <Association Name="FK_ParentSelfReferenceId">
+    <End Type="SelfReference_DBModel.SelfReference" Role="SelfReference" Multiplicity="0..1" />
+    <End Type="SelfReference_DBModel.SelfReference" Role="SelfReference1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SelfReference">
+        <PropertyRef Name="SelfReferenceId" />
+      </Principal>
+      <Dependent Role="SelfReference1">
+        <PropertyRef Name="ParentSelfReferenceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "yj/NdXnbmZYjDSB7PQDXz2mgY+IcW4IPOfwu3ZM/WG3rOE/JPsDKquSfcz0kxFd9C3LOkpxSaBI4+XL/FYVzww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net\\TSP.NET\\Laboratorul_1_2\\Laboratorul_1_2\\Laboratorul_1_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iusti\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
+    "C:\\Users\\iusti\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\iusti\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
+    "C:\\Users\\iusti\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

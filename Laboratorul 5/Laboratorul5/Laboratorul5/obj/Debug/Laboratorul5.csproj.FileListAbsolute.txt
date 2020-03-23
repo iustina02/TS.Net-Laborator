@@ -1,0 +1,15 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\Laboratorul5.exe.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\Laboratorul5.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\Laboratorul5.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.csprojAssemblyReference.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.Properties.Resources.resources
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.csproj.GenerateResource.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Laboratorul5\obj\Debug\Laboratorul5.Form1.resources

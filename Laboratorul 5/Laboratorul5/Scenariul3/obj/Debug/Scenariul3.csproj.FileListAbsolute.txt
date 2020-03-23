@@ -1,0 +1,11 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\obj\Debug\Scenariul3.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\Scenariul3.exe.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\Scenariul3.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\Scenariul3.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\obj\Debug\Scenariul3.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\obj\Debug\Scenariul3.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul3\obj\Debug\Scenariul3.pdb

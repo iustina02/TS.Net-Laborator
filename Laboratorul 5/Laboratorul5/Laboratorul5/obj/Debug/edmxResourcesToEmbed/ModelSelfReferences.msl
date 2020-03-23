@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SelfReference_DBModelStoreContainer" CdmEntityContainer="SelfReference_DBEntities">
+    <EntitySetMapping Name="SelfReferences">
+      <EntityTypeMapping TypeName="SelfReference_DBModel.SelfReference">
+        <MappingFragment StoreEntitySet="SelfReference">
+          <ScalarProperty Name="ParentSelfReferenceId" ColumnName="ParentSelfReferenceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SelfReferenceId" ColumnName="SelfReferenceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

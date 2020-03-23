@@ -1,0 +1,15 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.Properties.Resources.resources
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.csproj.GenerateResource.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\Scenariul2.exe.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\Scenariul2.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\Scenariul2.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.csprojAssemblyReference.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\TSP.NET\Laboratorul5\Scenariul2\obj\Debug\Scenariul2.Form1.resources

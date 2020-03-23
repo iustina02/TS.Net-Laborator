@@ -1,0 +1,9 @@
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.csprojAssemblyReference.cache
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.Properties.Resources.resources
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.csproj.GenerateResource.cache
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.Form1.resources
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\bin\Debug\Laboratorul_1_3.exe.config
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\bin\Debug\Laboratorul_1_3.exe
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\bin\Debug\Laboratorul_1_3.pdb
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.exe
+C:\Users\HOME\Documents\TS.Net\TSP.NET\Laboratorul_1_2\Laboratorul_1_3\obj\Debug\Laboratorul_1_3.pdb
