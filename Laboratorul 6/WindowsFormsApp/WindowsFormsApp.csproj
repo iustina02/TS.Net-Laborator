@@ -119,14 +119,6 @@
       <Project>{1219150e-3d9e-4359-a340-28b77d2e9baa}</Project>
       <Name>HostWCF</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Laboratorul 6\Laboratorul_6.csproj">
-      <Project>{6c756b95-9668-469e-8b04-b24f3bf4ff89}</Project>
-      <Name>Laboratorul_6</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObjectWCF\ObjectWCF.csproj">
-      <Project>{d920e953-4f6d-43fb-aab3-34ebf95eaa40}</Project>
-      <Name>ObjectWCF</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

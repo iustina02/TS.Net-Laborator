@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -10,6 +12,7 @@ namespace WindowsFormsApp
     public partial class Form1 : Form
     {
         List<Post> posts = new List<Post>();
+        string connectionString = @"Data Source=JARVICE;Initial Catalog=PostComment;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
@@ -37,8 +40,28 @@ namespace WindowsFormsApp
                 return;
             // Se afiseaza Comment-urile pentru Post-ul selectat
             dgc.DataSource = null;
-            dgc.DataSource = posts[e.RowIndex].Comments;
+            using (SqlConnection sqlCon = new SqlConnection(connectionString))
+            {
+                sqlCon.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Comments where PostPostId =" + e.RowIndex.ToString(), sqlCon);
+                DataTable dtbl = new DataTable();
+                sqlDa.Fill(dtbl);
+
+                dgc.DataSource = dtbl;
+            }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection sqlCon = new SqlConnection(connectionString))
+            {
+                sqlCon.Open();
+                SqlDataAdapter sqlDa = new SqlDataAdapter("SELECT * FROM Posts", sqlCon);
+                DataTable dtbl = new DataTable();
+                sqlDa.Fill(dtbl);
+
+                dgp.DataSource = dtbl;
+            }
+        }
     }
 }
