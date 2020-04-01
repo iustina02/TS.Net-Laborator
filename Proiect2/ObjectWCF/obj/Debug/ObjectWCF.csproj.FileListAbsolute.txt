@@ -1,0 +1,12 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\ObjectWCF.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\ObjectWCF.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\obj\Debug\ObjectWCF.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\obj\Debug\ObjectWCF.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\ModelMyPhotos.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\ModelMyPhotos.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\ModelMyPhotos.dll.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect2\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
