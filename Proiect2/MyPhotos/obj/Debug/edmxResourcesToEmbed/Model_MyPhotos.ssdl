@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model_MyPhotos.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Films">
+    <Key>
+      <PropertyRef Name="Film_Id" />
+    </Key>
+    <Property Name="Film_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Event" Type="nvarchar(max)" />
+    <Property Name="Landscape" Type="nvarchar(max)" />
+    <Property Name="Path" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="FilmsPersons">
+    <Key>
+      <PropertyRef Name="Films_Film_Id" />
+      <PropertyRef Name="Persons_Person_Id" />
+    </Key>
+    <Property Name="Films_Film_Id" Type="int" Nullable="false" />
+    <Property Name="Persons_Person_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FilmsPlaces_Photo">
+    <Key>
+      <PropertyRef Name="Films_Film_Id" />
+      <PropertyRef Name="Places_Photo_Place_Id" />
+    </Key>
+    <Property Name="Films_Film_Id" Type="int" Nullable="false" />
+    <Property Name="Places_Photo_Place_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="Person_Id" />
+    </Key>
+    <Property Name="Person_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="Photo_Id" />
+    </Key>
+    <Property Name="Photo_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Event" Type="nvarchar(max)" />
+    <Property Name="Landscape" Type="nvarchar(max)" />
+    <Property Name="Path" Type="nvarchar(max)" />
+    <Property Name="Places_Photo_Place_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhotosPersons_Photo">
+    <Key>
+      <PropertyRef Name="Photos_Photo_Id" />
+      <PropertyRef Name="Persons_Photo_Person_Id" />
+    </Key>
+    <Property Name="Photos_Photo_Id" Type="int" Nullable="false" />
+    <Property Name="Persons_Photo_Person_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Places">
+    <Key>
+      <PropertyRef Name="Place_Id" />
+    </Key>
+    <Property Name="Place_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Country" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar(max)" />
+    <Property Name="Region" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_FilmsPersons_Films">
+    <End Role="Films" Type="Self.Films" Multiplicity="1" />
+    <End Role="FilmsPersons" Type="Self.FilmsPersons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Films">
+        <PropertyRef Name="Film_Id" />
+      </Principal>
+      <Dependent Role="FilmsPersons">
+        <PropertyRef Name="Films_Film_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilmsPersons_Persons">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1" />
+    <End Role="FilmsPersons" Type="Self.FilmsPersons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Person_Id" />
+      </Principal>
+      <Dependent Role="FilmsPersons">
+        <PropertyRef Name="Persons_Person_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilmsPlaces_Photo_Films">
+    <End Role="Films" Type="Self.Films" Multiplicity="1" />
+    <End Role="FilmsPlaces_Photo" Type="Self.FilmsPlaces_Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Films">
+        <PropertyRef Name="Film_Id" />
+      </Principal>
+      <Dependent Role="FilmsPlaces_Photo">
+        <PropertyRef Name="Films_Film_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FilmsPlaces_Photo_Places_Photo">
+    <End Role="Places" Type="Self.Places" Multiplicity="1" />
+    <End Role="FilmsPlaces_Photo" Type="Self.FilmsPlaces_Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Places">
+        <PropertyRef Name="Place_Id" />
+      </Principal>
+      <Dependent Role="FilmsPlaces_Photo">
+        <PropertyRef Name="Places_Photo_Place_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotosPersons_Photo_Persons_Photo">
+    <End Role="Persons" Type="Self.Persons" Multiplicity="1" />
+    <End Role="PhotosPersons_Photo" Type="Self.PhotosPersons_Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persons">
+        <PropertyRef Name="Person_Id" />
+      </Principal>
+      <Dependent Role="PhotosPersons_Photo">
+        <PropertyRef Name="Persons_Photo_Person_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotosPersons_Photo_Photos">
+    <End Role="Photos" Type="Self.Photos" Multiplicity="1" />
+    <End Role="PhotosPersons_Photo" Type="Self.PhotosPersons_Photo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Photos">
+        <PropertyRef Name="Photo_Id" />
+      </Principal>
+      <Dependent Role="PhotosPersons_Photo">
+        <PropertyRef Name="Photos_Photo_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PhotosPlaces_Photo">
+    <End Role="Places" Type="Self.Places" Multiplicity="1" />
+    <End Role="Photos" Type="Self.Photos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Places">
+        <PropertyRef Name="Place_Id" />
+      </Principal>
+      <Dependent Role="Photos">
+        <PropertyRef Name="Places_Photo_Place_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Model_MyPhotosStoreContainer">
+    <EntitySet Name="Films" EntityType="Self.Films" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FilmsPersons" EntityType="Self.FilmsPersons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FilmsPlaces_Photo" EntityType="Self.FilmsPlaces_Photo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persons" EntityType="Self.Persons" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Photos" EntityType="Self.Photos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhotosPersons_Photo" EntityType="Self.PhotosPersons_Photo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Places" EntityType="Self.Places" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_FilmsPersons_Films" Association="Self.FK_FilmsPersons_Films">
+      <End Role="Films" EntitySet="Films" />
+      <End Role="FilmsPersons" EntitySet="FilmsPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilmsPersons_Persons" Association="Self.FK_FilmsPersons_Persons">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="FilmsPersons" EntitySet="FilmsPersons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilmsPlaces_Photo_Films" Association="Self.FK_FilmsPlaces_Photo_Films">
+      <End Role="Films" EntitySet="Films" />
+      <End Role="FilmsPlaces_Photo" EntitySet="FilmsPlaces_Photo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FilmsPlaces_Photo_Places_Photo" Association="Self.FK_FilmsPlaces_Photo_Places_Photo">
+      <End Role="Places" EntitySet="Places" />
+      <End Role="FilmsPlaces_Photo" EntitySet="FilmsPlaces_Photo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotosPersons_Photo_Persons_Photo" Association="Self.FK_PhotosPersons_Photo_Persons_Photo">
+      <End Role="Persons" EntitySet="Persons" />
+      <End Role="PhotosPersons_Photo" EntitySet="PhotosPersons_Photo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotosPersons_Photo_Photos" Association="Self.FK_PhotosPersons_Photo_Photos">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="PhotosPersons_Photo" EntitySet="PhotosPersons_Photo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PhotosPlaces_Photo" Association="Self.FK_PhotosPlaces_Photo">
+      <End Role="Places" EntitySet="Places" />
+      <End Role="Photos" EntitySet="Photos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

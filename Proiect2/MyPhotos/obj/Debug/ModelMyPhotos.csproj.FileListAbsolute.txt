@@ -1,0 +1,9 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\obj\Debug\ModelMyPhotos.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\obj\Debug\ModelMyPhotos.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\bin\Debug\ModelMyPhotos.dll.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\bin\Debug\ModelMyPhotos.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\bin\Debug\ModelMyPhotos.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\obj\Debug\ModelMyPhotos.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net\Proiect\MyPhotos\MyPhotos\obj\Debug\ModelMyPhotos.pdb

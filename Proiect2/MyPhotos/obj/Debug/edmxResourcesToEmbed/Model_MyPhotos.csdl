@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model_MyPhotos" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model_MyPhotosContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Photos" EntityType="Model_MyPhotos.Photos" />
+    <EntitySet Name="Films" EntityType="Model_MyPhotos.Films" />
+    <EntitySet Name="Persons" EntityType="Model_MyPhotos.Persons" />
+    <EntitySet Name="Places" EntityType="Model_MyPhotos.Places" />
+    <AssociationSet Name="PhotosPlaces_Photo" Association="Model_MyPhotos.PhotosPlaces_Photo">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Places_Photo" EntitySet="Places" />
+    </AssociationSet>
+    <AssociationSet Name="PhotosPersons_Photo" Association="Model_MyPhotos.PhotosPersons_Photo">
+      <End Role="Photos" EntitySet="Photos" />
+      <End Role="Persons_Photo" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FilmsPersons" Association="Model_MyPhotos.FilmsPersons">
+      <End Role="Films" EntitySet="Films" />
+      <End Role="Persons" EntitySet="Persons" />
+    </AssociationSet>
+    <AssociationSet Name="FilmsPlaces_Photo" Association="Model_MyPhotos.FilmsPlaces_Photo">
+      <End Role="Films" EntitySet="Films" />
+      <End Role="Places_Photo" EntitySet="Places" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Photos">
+    <Key>
+      <PropertyRef Name="Photo_Id" />
+    </Key>
+    <Property Name="Photo_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="true" Precision="3" />
+    <Property Name="Event" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Landscape" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Places_Photo" Relationship="Model_MyPhotos.PhotosPlaces_Photo" FromRole="Photos" ToRole="Places_Photo" />
+    <NavigationProperty Name="Persons_Photo" Relationship="Model_MyPhotos.PhotosPersons_Photo" FromRole="Photos" ToRole="Persons_Photo" />
+    <Property Name="Path" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Films">
+    <Key>
+      <PropertyRef Name="Film_Id" />
+    </Key>
+    <Property Name="Film_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="true" Precision="3" />
+    <Property Name="Event" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Landscape" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Persons" Relationship="Model_MyPhotos.FilmsPersons" FromRole="Films" ToRole="Persons" />
+    <NavigationProperty Name="Places_Photo" Relationship="Model_MyPhotos.FilmsPlaces_Photo" FromRole="Films" ToRole="Places_Photo" />
+    <Property Name="Path" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Persons">
+    <Key>
+      <PropertyRef Name="Person_Id" />
+    </Key>
+    <Property Name="Person_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Photos" Relationship="Model_MyPhotos.PhotosPersons_Photo" FromRole="Persons_Photo" ToRole="Photos" />
+    <NavigationProperty Name="Films" Relationship="Model_MyPhotos.FilmsPersons" FromRole="Persons" ToRole="Films" />
+  </EntityType>
+  <EntityType Name="Places">
+    <Key>
+      <PropertyRef Name="Place_Id" />
+    </Key>
+    <Property Name="Place_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Country" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="City" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Region" Type="String" Nullable="true" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Photos" Relationship="Model_MyPhotos.PhotosPlaces_Photo" FromRole="Places_Photo" ToRole="Photos" />
+    <NavigationProperty Name="Films" Relationship="Model_MyPhotos.FilmsPlaces_Photo" FromRole="Places_Photo" ToRole="Films" />
+  </EntityType>
+  <Association Name="PhotosPlaces_Photo">
+    <End Type="Model_MyPhotos.Photos" Role="Photos" Multiplicity="*" />
+    <End Type="Model_MyPhotos.Places" Role="Places_Photo" Multiplicity="1" />
+  </Association>
+  <Association Name="PhotosPersons_Photo">
+    <End Type="Model_MyPhotos.Photos" Role="Photos" Multiplicity="*" />
+    <End Type="Model_MyPhotos.Persons" Role="Persons_Photo" Multiplicity="*" />
+  </Association>
+  <Association Name="FilmsPersons">
+    <End Type="Model_MyPhotos.Films" Role="Films" Multiplicity="*" />
+    <End Type="Model_MyPhotos.Persons" Role="Persons" Multiplicity="*" />
+  </Association>
+  <Association Name="FilmsPlaces_Photo">
+    <End Type="Model_MyPhotos.Films" Role="Films" Multiplicity="*" />
+    <End Type="Model_MyPhotos.Places" Role="Places_Photo" Multiplicity="*" />
+  </Association>
+</Schema>
