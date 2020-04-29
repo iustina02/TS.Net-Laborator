@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObjectWCF
+namespace Proiect2
 {
     public class Class1
     {
