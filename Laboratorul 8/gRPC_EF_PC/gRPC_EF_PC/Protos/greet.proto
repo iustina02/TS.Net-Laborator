@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC_EF_PC";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+
+  rpc AddPost (AddPostRequest) returns (AddPostReply);
+
+  rpc AddComment (AddCommentRequest) returns (AddCommentReply);
+
+  rpc GetCommentsByPost (GetCommentsByPostRequest) returns (GetCommentsByPostReply);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+
+message AddPostRequest{
+    string description = 1;
+    string domain = 2;
+    string dateTime = 3;
+}
+
+message AddPostReply{
+    string message = 1;
+}
+
+
+// The request message containing a comment.
+message AddCommentRequest {
+  string comment = 1;
+  string post = 2;
+}
+
+// The response message containing the comment response.
+message AddCommentReply {
+  string message = 1;
+}
+
+
+message GetCommentsByPostRequest{
+    string post = 1;
+}
+
+message GetCommentsByPostReply{
+    string message = 1;
+}
