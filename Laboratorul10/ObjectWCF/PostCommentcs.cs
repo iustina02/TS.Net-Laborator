@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using PostComment;
 using PostComment.APIStatic;
-
 namespace ObjectWCF
 {
     public class PostComment : IPostComment

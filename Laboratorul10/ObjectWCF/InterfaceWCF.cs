@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ServiceModel;
 using PostComment;
-
 namespace ObjectWCF
 {
     [ServiceContract]

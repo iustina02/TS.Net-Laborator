@@ -6575,11 +6575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul 6\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectUniqueName": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul10\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "projectName": "RazorPagesMovie",
-      "projectPath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul 6\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectPath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul10\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "packagesPath": "C:\\Users\\iusti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul 6\\RazorPagesMovie\\obj\\",
+      "outputPath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Laboratorul10\\RazorPagesMovie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
