@@ -1,0 +1,21 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojAssemblyReference.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\HostWCF.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\Laboratorul 6.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\ObjectWCF.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\HostWCF.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\HostWCF.exe.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\Laboratorul 6.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\Laboratorul 6.dll.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\ObjectWCF.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
