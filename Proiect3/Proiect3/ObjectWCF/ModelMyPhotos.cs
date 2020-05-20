@@ -36,6 +36,13 @@ namespace ObjectWCF
             return list_film;
         }
 
+        public List<Persons> GetAllPersons()
+        {
+            Persons person = new Persons();
+            List<Persons> list_persons = new List<Persons>();
+            list_persons = person.GetAllPersons();
+            return list_persons;
+        }
 
         public List<Photos> GetAllPhotos()
         {
@@ -43,6 +50,14 @@ namespace ObjectWCF
             List<Photos> list_photo = new List<Photos>();
             list_photo = photo.GetAllPhotos();
             return list_photo;
+        }
+
+        public List<Places> GetAllPlaces()
+        {
+            Places Places = new Places();
+            List<Places> list_places = new List<Places>();
+            list_places = Places.GetAllPlaces();
+            return list_places;
         }
 
         public List<Films> GetFilmByDate(DateTime date)

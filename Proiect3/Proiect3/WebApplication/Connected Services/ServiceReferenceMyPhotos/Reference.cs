@@ -14,7 +14,7 @@ namespace ServiceReferenceMyPhotos
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Photos", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Photos", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos", IsReference=true)]
     public partial class Photos : object
     {
         
@@ -126,7 +126,7 @@ namespace ServiceReferenceMyPhotos
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Places", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Places", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos", IsReference=true)]
     public partial class Places : object
     {
         
@@ -223,7 +223,7 @@ namespace ServiceReferenceMyPhotos
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Persons", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Persons", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos", IsReference=true)]
     public partial class Persons : object
     {
         
@@ -305,7 +305,7 @@ namespace ServiceReferenceMyPhotos
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Films", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Films", Namespace="http://schemas.datacontract.org/2004/07/ModelMyPhotos", IsReference=true)]
     public partial class Films : object
     {
         
@@ -477,6 +477,9 @@ namespace ServiceReferenceMyPhotos
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetFilmsByPersonDescription", ReplyAction="http://tempuri.org/InterfacePersons/GetFilmsByPersonDescriptionResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Films>> GetFilmsByPersonDescriptionAsync(string personDescription);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetAllPersons", ReplyAction="http://tempuri.org/InterfacePersons/GetAllPersonsResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetPhotosByCountry", ReplyAction="http://tempuri.org/InterfacePlaces/GetPhotosByCountryResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Photos>> GetPhotosByCountryAsync(string country);
         
@@ -494,6 +497,9 @@ namespace ServiceReferenceMyPhotos
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetFilmssByRegion", ReplyAction="http://tempuri.org/InterfacePlaces/GetFilmssByRegionResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Films>> GetFilmssByRegionAsync(string region);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetAllPlaces", ReplyAction="http://tempuri.org/InterfacePlaces/GetAllPlacesResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
@@ -641,6 +647,11 @@ namespace ServiceReferenceMyPhotos
             return base.Channel.GetFilmsByPersonDescriptionAsync(personDescription);
         }
         
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsAsync()
+        {
+            return base.Channel.GetAllPersonsAsync();
+        }
+        
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Photos>> GetPhotosByCountryAsync(string country)
         {
             return base.Channel.GetPhotosByCountryAsync(country);
@@ -669,6 +680,11 @@ namespace ServiceReferenceMyPhotos
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Films>> GetFilmssByRegionAsync(string region)
         {
             return base.Channel.GetFilmssByRegionAsync(region);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesAsync()
+        {
+            return base.Channel.GetAllPlacesAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

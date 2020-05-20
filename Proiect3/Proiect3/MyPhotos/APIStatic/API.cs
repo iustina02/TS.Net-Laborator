@@ -486,5 +486,27 @@ namespace ModelMyPhotos.APIStatic
                 return null; // trebuie verificat in apelant
             }
         }
+
+        public static List<Persons> GetAllPersons()
+        {
+            using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
+            {
+                var items = from p in ctx.Persons select p;
+                if (items != null)
+                    return items.ToList();
+                return null; // trebuie verificat in apelant
+            }
+        }
+
+        public static List<Places> GetAllPlaces()
+        {
+            using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
+            {
+                var items = from p in ctx.Places select p;
+                if (items != null)
+                    return items.ToList();
+                return null; // trebuie verificat in apelant
+            }
+        }
     }
 }

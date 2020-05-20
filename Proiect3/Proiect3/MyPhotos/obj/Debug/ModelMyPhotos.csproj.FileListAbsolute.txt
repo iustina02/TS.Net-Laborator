@@ -16,3 +16,13 @@ C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect2\MyPhotos\obj\
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect2\MyPhotos\obj\Debug\ModelMyPhotos.csproj.CopyComplete
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect2\MyPhotos\obj\Debug\ModelMyPhotos.dll
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect2\MyPhotos\obj\Debug\ModelMyPhotos.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\bin\Debug\ModelMyPhotos.dll.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\bin\Debug\ModelMyPhotos.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\bin\Debug\ModelMyPhotos.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\obj\Debug\ModelMyPhotos.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\obj\Debug\ModelMyPhotos.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\obj\Debug\ModelMyPhotos.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\obj\Debug\ModelMyPhotos.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\MyPhotos\obj\Debug\ModelMyPhotos.csprojAssemblyReference.cache

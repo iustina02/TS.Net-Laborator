@@ -11,21 +11,34 @@ namespace ModelMyPhotos
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Runtime.Serialization;
+
+    [DataContract(IsReference = true)]
     public partial class Photos
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage",
+            "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Photos()
         {
             this.Persons_Photo = new HashSet<Persons>();
         }
-    
+
+        [DataMember]
         public int Photo_Id { get; set; }
+        [DataMember]
         public Nullable<System.DateTime> Date { get; set; }
+        [DataMember]
         public string Event { get; set; }
+        [DataMember]
         public string Landscape { get; set; }
+        [DataMember]
         public string Path { get; set; }
-    
+
+        [DataMember]
         public virtual Places Places_Photo { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage",
+            "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [DataMember]
         public virtual ICollection<Persons> Persons_Photo { get; set; }
     }
 }

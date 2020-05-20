@@ -11,22 +11,37 @@ namespace ModelMyPhotos
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Runtime.Serialization;
+
+    [DataContract(IsReference = true)]
     public partial class Films
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage",
+            "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Films()
         {
             this.Persons = new HashSet<Persons>();
             this.Places_Photo = new HashSet<Places>();
         }
-    
+
+        [DataMember]
         public int Film_Id { get; set; }
+        [DataMember]
         public Nullable<System.DateTime> Date { get; set; }
+        [DataMember]
         public string Event { get; set; }
+        [DataMember]
         public string Landscape { get; set; }
+        [DataMember]
         public string Path { get; set; }
-    
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage",
+            "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [DataMember]
         public virtual ICollection<Persons> Persons { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage",
+            "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [DataMember]
         public virtual ICollection<Places> Places_Photo { get; set; }
     }
 }
