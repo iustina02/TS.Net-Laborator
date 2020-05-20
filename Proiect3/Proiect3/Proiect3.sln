@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proiect3", "Proiect3\Proiect3.csproj", "{A5EB7848-3929-4C7A-92C0-00D2055FB140}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{8D2A914C-8287-4C00-8501-BBF760E33674}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelMyPhotos", "MyPhotos\ModelMyPhotos.csproj", "{ADDBCFBF-0BAD-4D75-8164-478DDDF1CD6F}"
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5EB7848-3929-4C7A-92C0-00D2055FB140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5EB7848-3929-4C7A-92C0-00D2055FB140}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5EB7848-3929-4C7A-92C0-00D2055FB140}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5EB7848-3929-4C7A-92C0-00D2055FB140}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D2A914C-8287-4C00-8501-BBF760E33674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8D2A914C-8287-4C00-8501-BBF760E33674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D2A914C-8287-4C00-8501-BBF760E33674}.Release|Any CPU.ActiveCfg = Release|Any CPU
