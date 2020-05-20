@@ -56,11 +56,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ObjectWCF\ObjectWCF.csproj">
-      <Project>{2a48e20e-83e9-4c9e-a701-40acfd1ee02a}</Project>
-      <Name>ObjectWCF</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

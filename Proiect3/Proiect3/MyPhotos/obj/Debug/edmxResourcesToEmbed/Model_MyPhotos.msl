@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model_MyPhotosStoreContainer" CdmEntityContainer="Model_MyPhotosContainer">
+    <EntitySetMapping Name="Photos">
+      <EntityTypeMapping TypeName="IsTypeOf(Model_MyPhotos.Photos)">
+        <MappingFragment StoreEntitySet="Photos">
+          <ScalarProperty Name="Photo_Id" ColumnName="Photo_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="Landscape" ColumnName="Landscape" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Films">
+      <EntityTypeMapping TypeName="IsTypeOf(Model_MyPhotos.Films)">
+        <MappingFragment StoreEntitySet="Films">
+          <ScalarProperty Name="Film_Id" ColumnName="Film_Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="Landscape" ColumnName="Landscape" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persons">
+      <EntityTypeMapping TypeName="IsTypeOf(Model_MyPhotos.Persons)">
+        <MappingFragment StoreEntitySet="Persons">
+          <ScalarProperty Name="Person_Id" ColumnName="Person_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Places">
+      <EntityTypeMapping TypeName="IsTypeOf(Model_MyPhotos.Places)">
+        <MappingFragment StoreEntitySet="Places">
+          <ScalarProperty Name="Place_Id" ColumnName="Place_Id" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="PhotosPlaces_Photo" TypeName="Model_MyPhotos.PhotosPlaces_Photo" StoreEntitySet="Photos">
+      <EndProperty Name="Places_Photo">
+        <ScalarProperty Name="Place_Id" ColumnName="Places_Photo_Place_Id" />
+      </EndProperty>
+      <EndProperty Name="Photos">
+        <ScalarProperty Name="Photo_Id" ColumnName="Photo_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PhotosPersons_Photo" TypeName="Model_MyPhotos.PhotosPersons_Photo" StoreEntitySet="PhotosPersons_Photo">
+      <EndProperty Name="Photos">
+        <ScalarProperty Name="Photo_Id" ColumnName="Photos_Photo_Id" />
+      </EndProperty>
+      <EndProperty Name="Persons_Photo">
+        <ScalarProperty Name="Person_Id" ColumnName="Persons_Photo_Person_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FilmsPersons" TypeName="Model_MyPhotos.FilmsPersons" StoreEntitySet="FilmsPersons">
+      <EndProperty Name="Films">
+        <ScalarProperty Name="Film_Id" ColumnName="Films_Film_Id" />
+      </EndProperty>
+      <EndProperty Name="Persons">
+        <ScalarProperty Name="Person_Id" ColumnName="Persons_Person_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FilmsPlaces_Photo" TypeName="Model_MyPhotos.FilmsPlaces_Photo" StoreEntitySet="FilmsPlaces_Photo">
+      <EndProperty Name="Films">
+        <ScalarProperty Name="Film_Id" ColumnName="Films_Film_Id" />
+      </EndProperty>
+      <EndProperty Name="Places_Photo">
+        <ScalarProperty Name="Place_Id" ColumnName="Places_Photo_Place_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rv4XxjoNnpO8IPQdm333FHje4BWycD7aufdcaIZLxL4zT+deUtTW+WNFUiYmtIY78wTbOQYYWEw2edPlTLxPFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iusti\\OneDrive\\Documents\\GitHub\\TS.Net-Laborator\\Proiect3\\Proiect3\\Proiect3\\Proiect3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iusti\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\iusti\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

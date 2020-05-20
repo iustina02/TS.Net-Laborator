@@ -46,11 +46,5 @@
     <Compile Include="ModelMyPhotos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Proiect\MyPhotos\MyPhotos\ModelMyPhotos.csproj">
-      <Project>{addbcfbf-0bad-4d75-8164-478dddf1cd6f}</Project>
-      <Name>ModelMyPhotos</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

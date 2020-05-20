@@ -1,0 +1,11 @@
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\PostComment.dll.config
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\PostComment.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\PostComment.pdb
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\EntityFramework.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\EntityFramework.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\obj\Debug\PostComment.csproj.CoreCompileInputs.cache
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\obj\Debug\PostComment.csproj.CopyComplete
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\obj\Debug\PostComment.dll
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul 6\Laboratorul 6\obj\Debug\PostComment.pdb
