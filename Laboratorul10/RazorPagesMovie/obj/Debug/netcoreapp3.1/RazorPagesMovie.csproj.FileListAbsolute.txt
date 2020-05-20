@@ -235,7 +235,6 @@ C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPag
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Create.cshtml.g.cs
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Delete.cshtml.g.cs
-C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Edit.cshtml.g.cs
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Posts\Index.cshtml.g.cs
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Laboratorul10\RazorPagesMovie\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
