@@ -477,8 +477,11 @@ namespace ServiceReferenceMyPhotos
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetFilmsByPersonDescription", ReplyAction="http://tempuri.org/InterfacePersons/GetFilmsByPersonDescriptionResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Films>> GetFilmsByPersonDescriptionAsync(string personDescription);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetAllPersons", ReplyAction="http://tempuri.org/InterfacePersons/GetAllPersonsResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetAllPersonsPhoto", ReplyAction="http://tempuri.org/InterfacePersons/GetAllPersonsPhotoResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsPhotoAsync(int photo_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePersons/GetAllPersonsFilm", ReplyAction="http://tempuri.org/InterfacePersons/GetAllPersonsFilmResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsFilmAsync(int film_id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetPhotosByCountry", ReplyAction="http://tempuri.org/InterfacePlaces/GetPhotosByCountryResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Photos>> GetPhotosByCountryAsync(string country);
@@ -498,8 +501,11 @@ namespace ServiceReferenceMyPhotos
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetFilmssByRegion", ReplyAction="http://tempuri.org/InterfacePlaces/GetFilmssByRegionResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Films>> GetFilmssByRegionAsync(string region);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetAllPlaces", ReplyAction="http://tempuri.org/InterfacePlaces/GetAllPlacesResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetAllPlacesPhoto", ReplyAction="http://tempuri.org/InterfacePlaces/GetAllPlacesPhotoResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesPhotoAsync(int photo_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePlaces/GetAllPlacesFilm", ReplyAction="http://tempuri.org/InterfacePlaces/GetAllPlacesFilmResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesFilmAsync(int film_id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.2")]
@@ -647,9 +653,14 @@ namespace ServiceReferenceMyPhotos
             return base.Channel.GetFilmsByPersonDescriptionAsync(personDescription);
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsPhotoAsync(int photo_id)
         {
-            return base.Channel.GetAllPersonsAsync();
+            return base.Channel.GetAllPersonsPhotoAsync(photo_id);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Persons>> GetAllPersonsFilmAsync(int film_id)
+        {
+            return base.Channel.GetAllPersonsFilmAsync(film_id);
         }
         
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Photos>> GetPhotosByCountryAsync(string country)
@@ -682,9 +693,14 @@ namespace ServiceReferenceMyPhotos
             return base.Channel.GetFilmssByRegionAsync(region);
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesPhotoAsync(int photo_id)
         {
-            return base.Channel.GetAllPlacesAsync();
+            return base.Channel.GetAllPlacesPhotoAsync(photo_id);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferenceMyPhotos.Places>> GetAllPlacesFilmAsync(int film_id)
+        {
+            return base.Channel.GetAllPlacesFilmAsync(film_id);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

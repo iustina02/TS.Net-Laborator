@@ -118,6 +118,12 @@ namespace ModelMyPhotos
         {
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
+                //var photos = ctx.Photos.SingleOrDefault();
+
+                //var query = from p in ctx.Places
+                //            where p.Photos.Any (f => f.Photo_Id == photos.Photo_Id)
+                //            select p;
+
                 var items = from p in ctx.Photos select p;
                 if (items != null)
                     return items.ToList();

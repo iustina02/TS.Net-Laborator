@@ -487,22 +487,28 @@ namespace ModelMyPhotos.APIStatic
             }
         }
 
-        public static List<Persons> GetAllPersons()
+        public static List<Persons> GetAllPersonsPhoto(int photo_id)
         {
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Persons select p;
+                var items = from p in ctx.Persons
+                            where p.Photos.Any(f => f.Photo_Id == photo_id)
+                            select p;
+
                 if (items != null)
                     return items.ToList();
                 return null; // trebuie verificat in apelant
             }
         }
 
-        public static List<Places> GetAllPlaces()
+        public static List<Places> GetAllPlacesPhoto(int photo_id)
         {
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Places select p;
+                var items = from p in ctx.Places
+                            where p.Photos.Any(f => f.Photo_Id == photo_id)
+                            select p;
+
                 if (items != null)
                     return items.ToList();
                 return null; // trebuie verificat in apelant

@@ -1,0 +1,70 @@
+﻿@page
+@model WebApplication.Pages.Files.Files2Model
+@{
+    ViewData["Title"] = "Files2";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Films</h1>
+</div>
+<form>
+    <p>
+        <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Search" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Films[0].Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Films[0].Event)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Films[0].Landscape)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Films[0].Path)
+            </th>
+            <th>
+                Places Count
+            </th>
+            <th>
+                Persons Count
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Films)
+        {
+            <tr style="font-size:small">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Event)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Landscape)
+                </td>
+                <td>
+                    <iframe class="youtube-player"
+                            width="560"
+                            height="315"
+                            src="@Html.DisplayFor(modelItem => item.Path)"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Places_Photo.Count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Persons.Count)
+                </td>
+                </tr>
+            }
+    </tbody>
+</table>

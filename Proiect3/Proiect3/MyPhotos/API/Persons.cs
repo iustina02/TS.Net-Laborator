@@ -124,11 +124,28 @@ namespace ModelMyPhotos
             }
         }
 
-        public List<Persons> GetAllPersons()
+        public List<Persons> GetAllPersonsPhoto(int photo_id)
         {
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Persons select p;
+                var items = from p in ctx.Persons
+                            where p.Photos.Any(f => f.Photo_Id == photo_id)
+                            select p;
+
+                if (items != null)
+                    return items.ToList();
+                return null; // trebuie verificat in apelant
+            }
+        }
+
+        public List<Persons> GetAllPersonsFilm(int film_id)
+        {
+            using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
+            {
+                var items = from p in ctx.Persons
+                            where p.Films.Any(f => f.Film_Id == film_id)
+                            select p;
+
                 if (items != null)
                     return items.ToList();
                 return null; // trebuie verificat in apelant

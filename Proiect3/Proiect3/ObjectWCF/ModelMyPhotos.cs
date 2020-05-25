@@ -36,11 +36,19 @@ namespace ObjectWCF
             return list_film;
         }
 
-        public List<Persons> GetAllPersons()
+        public List<Persons> GetAllPersonsPhoto(int photo_id)
         {
             Persons person = new Persons();
             List<Persons> list_persons = new List<Persons>();
-            list_persons = person.GetAllPersons();
+            list_persons = person.GetAllPersonsPhoto(photo_id);
+            return list_persons;
+        }
+
+        public List<Persons> GetAllPersonsFilm(int film_id)
+        {
+            Persons person = new Persons();
+            List<Persons> list_persons = new List<Persons>();
+            list_persons = person.GetAllPersonsFilm(film_id);
             return list_persons;
         }
 
@@ -52,11 +60,19 @@ namespace ObjectWCF
             return list_photo;
         }
 
-        public List<Places> GetAllPlaces()
+        public List<Places> GetAllPlacesPhoto(int photo_id)
         {
             Places Places = new Places();
             List<Places> list_places = new List<Places>();
-            list_places = Places.GetAllPlaces();
+            list_places = Places.GetAllPlacesPhoto(photo_id);
+            return list_places;
+        }
+
+        public List<Places> GetAllPlacesFilm(int film_id)
+        {
+            Places Places = new Places();
+            List<Places> list_places = new List<Places>();
+            list_places = Places.GetAllPlacesFilm(film_id);
             return list_places;
         }
 

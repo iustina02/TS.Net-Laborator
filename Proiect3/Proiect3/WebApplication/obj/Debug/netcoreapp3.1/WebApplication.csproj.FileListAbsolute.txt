@@ -120,3 +120,4 @@ C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\WebA
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.pdb
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\WebApplication\obj\Debug\netcoreapp3.1\WebApplication.genruntimeconfig.cache
 C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\WebApplication\obj\Debug\netcoreapp3.1\Razor\Pages\Files\Files.cshtml.g.cs
+C:\Users\iusti\OneDrive\Documents\GitHub\TS.Net-Laborator\Proiect3\Proiect3\WebApplication\obj\Debug\netcoreapp3.1\Razor\Pages\Files\Files2.cshtml.g.cs

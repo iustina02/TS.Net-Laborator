@@ -75,7 +75,9 @@ namespace ObjectWCF
         List<Films> GetFilmsByPersonDescription(string personDescription);
 
         [OperationContract]
-        List<Persons> GetAllPersons();
+        List<Persons> GetAllPersonsPhoto(int photo_id);
+        [OperationContract]
+        List<Persons> GetAllPersonsFilm(int film_id);
     }
 
     [ServiceContract]
@@ -100,7 +102,10 @@ namespace ObjectWCF
         List<Films> GetFilmssByRegion(string region);
 
         [OperationContract]
-        List<Places> GetAllPlaces();
+        List<Places> GetAllPlacesPhoto(int photo_id);
+
+        [OperationContract]
+        List<Places> GetAllPlacesFilm(int film_id);
     }
 
     [ServiceContract]

@@ -38,7 +38,7 @@
                 @Html.DisplayNameFor(model => model.Photos[0].Places_Photo.Region)
             </th>
             <th>
-                Persons
+                Persons Count
             </th>
             <th></th>
         </tr>
@@ -69,17 +69,7 @@
                     @Html.DisplayFor(modelItem => item.Places_Photo.Region)
                 </td>
                 <td>
-                    @foreach (var persons in item.Persons_Photo)
-                    {
-                        <tr style="font-size:small">
-                            <td>
-                                @Html.DisplayFor(modelItem => persons.Name)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => persons.Description)
-                            </td>
-                        </tr>
-                    }
+                    @Html.DisplayFor(modelItem => item.Persons_Photo.Count)
                 </td>
                 </tr>
             }

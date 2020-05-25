@@ -15,21 +15,20 @@ namespace ModelMyPhotos
             List<Photos> list_photos = new List<Photos>();
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Places where p.Country == country select p;
-                if (items != null)
+                var places = from p in ctx.Places
+                             where p.Country == country
+                             select p.Photos;
+
+                foreach (var photos in places.ToList())
                 {
-                    foreach (Places item in items)
+                    foreach (var photo in photos)
                     {
-                        if (item.Photos != null)
-                        {
-                            foreach (Photos photo in item.Photos)
-                            {
-                                list_photos.Add(photo);
-                            }
-                        }
+                        list_photos.Add(photo);
                     }
-                    return list_photos;
                 }
+
+                if (list_photos != null)
+                    return list_photos;
                 return null; // trebuie verificat in apelant
             }
         }
@@ -44,21 +43,20 @@ namespace ModelMyPhotos
             List<Photos> list_photos = new List<Photos>();
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Places where p.City == city select p;
-                if (items != null)
+                var places = from p in ctx.Places
+                             where p.City == city
+                             select p.Photos;
+
+                foreach(var photos in places.ToList())
                 {
-                    foreach (Places item in items)
+                    foreach(var photo in photos)
                     {
-                        if (item.Photos != null)
-                        {
-                            foreach (Photos photo in item.Photos)
-                            {
-                                list_photos.Add(photo);
-                            }
-                        }
+                        list_photos.Add(photo);
                     }
-                    return list_photos;
                 }
+
+                if (list_photos != null)
+                    return list_photos;
                 return null; // trebuie verificat in apelant
             }
         }
@@ -73,21 +71,20 @@ namespace ModelMyPhotos
             List<Photos> list_photos = new List<Photos>();
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Places where p.Region == region select p;
-                if (items != null)
+                var places = from p in ctx.Places
+                             where p.Region == region
+                             select p.Photos;
+
+                foreach (var photos in places.ToList())
                 {
-                    foreach (Places item in items)
+                    foreach (var photo in photos)
                     {
-                        if (item.Photos != null)
-                        {
-                            foreach (Photos photo in item.Photos)
-                            {
-                                list_photos.Add(photo);
-                            }
-                        }
+                        list_photos.Add(photo);
                     }
-                    return list_photos;
                 }
+
+                if (list_photos != null)
+                    return list_photos;
                 return null; // trebuie verificat in apelant
             }
         }
@@ -179,11 +176,28 @@ namespace ModelMyPhotos
             }
         }
 
-        public List<Places> GetAllPlaces()
+        public List<Places> GetAllPlacesPhoto(int photo_id)
         {
             using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
             {
-                var items = from p in ctx.Places select p;
+                var items = from p in ctx.Places
+                            where p.Photos.Any(f => f.Photo_Id == photo_id)
+                            select p;
+
+                if (items != null)
+                    return items.ToList();
+                return null; // trebuie verificat in apelant
+            }
+        }
+
+        public List<Places> GetAllPlacesFilm(int film_id)
+        {
+            using (Model_MyPhotosContainer ctx = new Model_MyPhotosContainer())
+            {
+                var items = from p in ctx.Places
+                            where p.Films.Any(f => f.Film_Id == film_id)
+                            select p;
+
                 if (items != null)
                     return items.ToList();
                 return null; // trebuie verificat in apelant
